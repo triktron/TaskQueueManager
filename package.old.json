@@ -1,0 +1,23 @@
+{
+   "name": "TaskManager",
+   "version": "0.0.1",
+   "description": "typescript lib to manage tasks.",
+   "devDependencies": {
+      "@types/node": "^8.0.29",
+      "nodemon": "^2.0.4",
+      "ts-node": "3.3.0",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {},
+   "scripts": {
+      "start": "ts-node index.ts",
+      "nodemon": "nodemon --exec ts-node index.ts"
+   },
+   "nodemonConfig": {
+      "ignore": [
+         "*.sqlite3",
+         "settings.json"
+      ],
+      "delay": "1000"
+   }
+}
