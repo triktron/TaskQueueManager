@@ -2,7 +2,7 @@
   "name": "taskqueuemanager",
   "version": "1.0.0",
   "description": "Task Queue Manager is a typescript library for handling and timing task.",
-  "main": "index.js",
+  "main": "lib\TaskManager.js",
   "dependencies": {},
   "devDependencies": {
     "@types/es6-promise": "^3.3.0",
