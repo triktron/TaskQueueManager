@@ -5,7 +5,7 @@ Task Queue Manager is a typescript library for handling and timing task.
 ## Installation
 
 ```bash
-npm install TaskQueueManager
+npm install TaskQueueManager typescript ts-node @types/node
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ function sleep(ms: number) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-export class CustomTask extends Task {
+class CustomTask extends Task {
   sleepTime: number = 0
 
   async exec() {
