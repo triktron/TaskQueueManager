@@ -1,6 +1,6 @@
 {
   "name": "taskqueuemanager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Task Queue Manager is a typescript library for handling and timing task.",
   "main": "lib/TaskManager.js",
   "dependencies": {},
@@ -18,22 +18,29 @@
     "start": "ts-node demo.ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format; git add -A src",
-    "postversion" : "git push; git push --tags"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/triktron/TaskQueueManager.git"
   },
-  "keywords": ["typescript", "tasks", "queue", "timed"],
+  "keywords": [
+    "typescript",
+    "tasks",
+    "queue",
+    "timed"
+  ],
   "author": "Triktron",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/triktron/TaskQueueManager/issues"
   },
   "homepage": "https://github.com/triktron/TaskQueueManager#readme",
-  "files": ["lib/**/*"]
+  "files": [
+    "lib/**/*"
+  ]
 }
