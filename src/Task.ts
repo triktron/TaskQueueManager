@@ -1,14 +1,13 @@
 export class Task {
+  ID: number = -1;
 
-  ID: Number
+  Name: string = 'Anonymous Tast';
 
-  Name: string
+  DependsOn: number[] = [];
 
-  DependsOn: Number[] = []
+  Running: boolean = false;
 
-  Running: boolean = false
-
-  Group: string = "Master"
+  Group: string = 'Master';
 
   async exec() {
     throw new Error('empty task!');
